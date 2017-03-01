@@ -1,0 +1,29 @@
+Big Data Analytics
+Project 2 - Newsgroup Text Analysis
+Vinay More, Amey Nayak, Rohit Giyanani
+--------------------------------------------------------------------------------------
+Files in this directory:
+ModelBuild.java: This program builds the model with 70% files in each newsgroup directory
+TestModel.java: This program tests the model with 30% files which were not used for training
+stopWordsList.txt:	List of stopWords
+model folder:   This model folder has model files which are already created after running ModelBuild.java on 70% files of each newsgroup
+                If user executes ModelBuild.java, the files will be cleared off and then updated with latest values for new selection.
+			
+How to run the Newsgroup text Analysis:
+Part-I: Run already created model on selected test files:
+    1. Run TestModel.java program
+	   File browser window will pop up
+	2. Select newsgroup directory e.g. C:\Users\admin\Desktop\Big Data Analytics\project2\20_newsgroups\
+
+Part-II: Build model again and then run that on selected text files
+	1. Run ModelBuild.java program
+	   File browser window will pop up
+	2. Select newsgroup directory e.g. C:\Users\admin\Desktop\Big Data Analytics\project2\20_newsgroups\
+	   (new model files will be created in model folder after 2nd step)
+    3. Run TestModel.java program (Optional: Change score function - refer 174th line in TestModel.java program)
+	   File browser window will pop up	
+	4. Select newsgroup directory e.g. C:\Users\admin\Desktop\Big Data Analytics\project2\20_newsgroups\
+
+Results:
+	1. After running ModelBuild.java program, in model folder 20 model files are created with sorted word mapping with their count for each newsgroup
+	2. After running TestModel.java program, correctly classifed, iccorrectly instances and accuracy is printed on console.  
